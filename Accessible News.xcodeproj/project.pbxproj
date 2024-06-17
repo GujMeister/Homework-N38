@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		853A3C692C1F5EEF0042A0A4 /* Accessible_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A3C682C1F5EEF0042A0A4 /* Accessible_NewsApp.swift */; };
-		853A3C6B2C1F5EEF0042A0A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A3C6A2C1F5EEF0042A0A4 /* ContentView.swift */; };
+		853A3C6B2C1F5EEF0042A0A4 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A3C6A2C1F5EEF0042A0A4 /* NewsListView.swift */; };
 		853A3C6D2C1F5EF10042A0A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853A3C6C2C1F5EF10042A0A4 /* Assets.xcassets */; };
 		853A3C702C1F5EF10042A0A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853A3C6F2C1F5EF10042A0A4 /* Preview Assets.xcassets */; };
+		853A3C772C1F5EFD0042A0A4 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A3C762C1F5EFD0042A0A4 /* NewsModel.swift */; };
+		853A3C7B2C1F5F4B0042A0A4 /* SimpleNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 853A3C7A2C1F5F4B0042A0A4 /* SimpleNetworking */; };
+		853A3C832C1F60F50042A0A4 /* NewsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A3C822C1F60F50042A0A4 /* NewsListVM.swift */; };
+		853A3C852C1F69F80042A0A4 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A3C842C1F69F80042A0A4 /* NewsTableViewCell.swift */; };
+		853A3C882C1FAFCC0042A0A4 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A3C872C1FAFCC0042A0A4 /* NewsDetailViewController.swift */; };
+		853A3C8A2C1FB00C0042A0A4 /* NewsDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853A3C892C1FB00C0042A0A4 /* NewsDetailVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		853A3C652C1F5EEF0042A0A4 /* Accessible News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accessible News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		853A3C682C1F5EEF0042A0A4 /* Accessible_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessible_NewsApp.swift; sourceTree = "<group>"; };
-		853A3C6A2C1F5EEF0042A0A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		853A3C6A2C1F5EEF0042A0A4 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
 		853A3C6C2C1F5EF10042A0A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		853A3C6F2C1F5EF10042A0A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		853A3C762C1F5EFD0042A0A4 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		853A3C822C1F60F50042A0A4 /* NewsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListVM.swift; sourceTree = "<group>"; };
+		853A3C842C1F69F80042A0A4 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		853A3C872C1FAFCC0042A0A4 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		853A3C892C1FB00C0042A0A4 /* NewsDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				853A3C7B2C1F5F4B0042A0A4 /* SimpleNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +63,10 @@
 		853A3C672C1F5EEF0042A0A4 /* Accessible News */ = {
 			isa = PBXGroup;
 			children = (
-				853A3C682C1F5EEF0042A0A4 /* Accessible_NewsApp.swift */,
-				853A3C6A2C1F5EEF0042A0A4 /* ContentView.swift */,
-				853A3C6C2C1F5EF10042A0A4 /* Assets.xcassets */,
+				853A3C7F2C1F5FC70042A0A4 /* Assets */,
+				853A3C7C2C1F5FAC0042A0A4 /* Application */,
+				853A3C782C1F5EFF0042A0A4 /* Model */,
+				853A3C7E2C1F5FBB0042A0A4 /* Scenes */,
 				853A3C6E2C1F5EF10042A0A4 /* Preview Content */,
 			);
 			path = "Accessible News";
@@ -65,6 +78,66 @@
 				853A3C6F2C1F5EF10042A0A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		853A3C782C1F5EFF0042A0A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				853A3C762C1F5EFD0042A0A4 /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		853A3C7C2C1F5FAC0042A0A4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				853A3C682C1F5EEF0042A0A4 /* Accessible_NewsApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		853A3C7E2C1F5FBB0042A0A4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				853A3C802C1F5FD20042A0A4 /* News List */,
+				853A3C812C1F5FD80042A0A4 /* Detail News  */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		853A3C7F2C1F5FC70042A0A4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				853A3C6C2C1F5EF10042A0A4 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		853A3C802C1F5FD20042A0A4 /* News List */ = {
+			isa = PBXGroup;
+			children = (
+				853A3C8B2C206C670042A0A4 /* Table View Cell */,
+				853A3C6A2C1F5EEF0042A0A4 /* NewsListView.swift */,
+				853A3C822C1F60F50042A0A4 /* NewsListVM.swift */,
+			);
+			path = "News List";
+			sourceTree = "<group>";
+		};
+		853A3C812C1F5FD80042A0A4 /* Detail News  */ = {
+			isa = PBXGroup;
+			children = (
+				853A3C872C1FAFCC0042A0A4 /* NewsDetailViewController.swift */,
+				853A3C892C1FB00C0042A0A4 /* NewsDetailVM.swift */,
+			);
+			path = "Detail News ";
+			sourceTree = "<group>";
+		};
+		853A3C8B2C206C670042A0A4 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				853A3C842C1F69F80042A0A4 /* NewsTableViewCell.swift */,
+			);
+			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +156,9 @@
 			dependencies = (
 			);
 			name = "Accessible News";
+			packageProductDependencies = (
+				853A3C7A2C1F5F4B0042A0A4 /* SimpleNetworking */,
+			);
 			productName = "Accessible News";
 			productReference = 853A3C652C1F5EEF0042A0A4 /* Accessible News.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 853A3C5C2C1F5EEF0042A0A4;
+			packageReferences = (
+				853A3C792C1F5F4B0042A0A4 /* XCRemoteSwiftPackageReference "SimpleNetworking" */,
+			);
 			productRefGroup = 853A3C662C1F5EEF0042A0A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +216,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				853A3C6B2C1F5EEF0042A0A4 /* ContentView.swift in Sources */,
+				853A3C8A2C1FB00C0042A0A4 /* NewsDetailVM.swift in Sources */,
+				853A3C882C1FAFCC0042A0A4 /* NewsDetailViewController.swift in Sources */,
+				853A3C772C1F5EFD0042A0A4 /* NewsModel.swift in Sources */,
+				853A3C6B2C1F5EEF0042A0A4 /* NewsListView.swift in Sources */,
+				853A3C852C1F69F80042A0A4 /* NewsTableViewCell.swift in Sources */,
 				853A3C692C1F5EEF0042A0A4 /* Accessible_NewsApp.swift in Sources */,
+				853A3C832C1F60F50042A0A4 /* NewsListVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		853A3C792C1F5F4B0042A0A4 /* XCRemoteSwiftPackageReference "SimpleNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GujMeister/SimpleNetworking";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		853A3C7A2C1F5F4B0042A0A4 /* SimpleNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 853A3C792C1F5F4B0042A0A4 /* XCRemoteSwiftPackageReference "SimpleNetworking" */;
+			productName = SimpleNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 853A3C5D2C1F5EEF0042A0A4 /* Project object */;
 }
