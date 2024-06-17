@@ -8,15 +8,17 @@
 import Foundation
 import SimpleNetworking
 
-class NewsListViewModel: ObservableObject {
+final class NewsListViewModel: ObservableObject {
+    // MARK: - Properties
     @Published var articles: [Article] = []
-    
     var onArticleSelected: ((Article) -> Void)?
     
+    // MARK: - Lifecycle
     init() {
         fetchNews()
     }
     
+    // MARK: - Functions
     func fetchNews() {
         let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=04bda797a49346e4aca004ee3402281b"
         
@@ -24,8 +26,7 @@ class NewsListViewModel: ObservableObject {
             switch result {
             case .success(let newsData):
                 DispatchQueue.main.async {
-                    self.articles = newsData.articles
-                    print(newsData)
+                    self.articles = newsData.articles.filter { $0.urlToImage != nil }
                 }
             case .failure(let error):
                 print("Error fetching news: \(error)")
